@@ -1,6 +1,7 @@
 import asyncio
 import os
 import random
+from typing import MappingView
 from fuzzywuzzy import fuzz
 import time
 from aiohttp import ClientSession
@@ -180,11 +181,12 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
         hour = "23"
         minute = "59"
+        t_h = ""
+        t_m = ""
         stop = 0
         zero = 0
         while not(stop):
-
-            r = requests.get("https://report.az/archive/ajax/?date=2021-12-10&timestamp=2021-12-10%20"+ hour +"%3A" +minute+ "%3A59")
+            r = requests.get("https://report.az/archive/ajax/?date=" +year+ "-" +month+ "-" +day+ "&timestamp=" +year+ "-" +month+ "-" +day+ "%20"+ hour +"%3A" +minute+ "%3A59")
             soup = bs(str(r.json()["html"]),"html.parser")
             if soup.findAll(class_="col-lg-3 col-md-4 col-sm-6 infinity-item") != 0:
                 for stat in soup.findAll(class_="col-lg-3 col-md-4 col-sm-6 infinity-item"):
@@ -202,9 +204,14 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     minute = str(int(minute)-1)
                     if int(minute) // 10 == 0:
                         minute = "0"+minute
-                if(hour == "00" and not(zero)):
-                    zero = 1
-                if(hour == "00" and zero):
+                if(hour != t_h):
+                    t_h = hour
+                if(minute != t_m):
+                    t_m = minute
+                print("[TEMP HOUR]",t_h)
+                print("[TEMP MINUTE]",t_m)
+                if(hour == t_h and minute == t_m):
+                    print("[STOPPED]")
                     stop = 1
                     break
                 print(hour,minute)
