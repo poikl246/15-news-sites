@@ -166,32 +166,38 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         urls_list = []
         caunt = 0
 
-        exit()
+        # exit()
 
         # ******************************************************************************************************************************************
         # Тут нормальный парсинг, нужно достать ссылки на новости
 
         # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↓
 
-        for i in range(0, 3000):
+        for i in range(1, 3000):
             headers = {'Accept': '*/*', 'Connection': 'keep-alive',
                        'User-Agent': f'{us.random}',
                        'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
-            url = f'https://musavat.com/archive?text=&type=news&date_begin={data_time[2]}.{data_time[1]}.{data_time[0]}&date_end={data_time[2]}.{data_time[1]}.{data_time[0]}&id_news_category=&id_author=&page={i}'
+
+            url = f'https://musavat.com/archive?text=&type=news&date_begin={data_time[2]}.{data_time[1]}.{data_time[0]}&date_end={data_time2[2]}.{data_time2[1]}.{data_time2[0]}&id_news_category=&id_author=&page={i}'
             print(url)
 
             req = requests.get(url, headers=headers)
 
             src = req.text
-            # print(src)
+            print(src)
             soup = BeautifulSoup(src, 'html.parser')
+            print('*'*10)
+            print(soup.find(class_='text-center').find(class_='pagination').find_all('li')[-2].find('a').text)
+
+            if int(soup.find(class_='text-center').find(class_='pagination').find_all('li')[-2].find('a').text) == i:
+                break
 
             page = soup.find(class_='row block-news')
             if page.find('form-group col-sm-3 col-md-3') != None:
 
                 for url_n in page.find_all('form-group col-sm-3 col-md-3'):
                     if urls_list.count(url_n.get('href')) == 0:
-                        urls_list.append([url_n.get('href'), caunt, data_master_scan_in])
+                        urls_list.append([url_n.fing('a').get('href'), caunt, data_master_scan_in])
                         caunt += 1  # Это нужно оставить, так как по нему создаются файлы txt
                     # break
             else:
@@ -200,7 +206,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
             # print(urls_list)
 
+
         print(urls_list)
+        exit()
 
         # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↑
 
