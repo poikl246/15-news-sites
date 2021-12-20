@@ -19,9 +19,13 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
     async def fetch_url_data(session, url, caunt, data_master_scan):
         print(url, caunt)
-        headers = {'Accept': '*/*', 'Connection': 'keep-alive',
-                   'User-Agent': f'{us.random}',
-                   'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
+        headers = {'Accept': '*/*', 
+            'Connection': 'keep-alive',
+            'User-Agent': us.random,
+            'Cache-Control': 'max-age=0', 'DNT': '1', 
+            'Upgrade-Insecure-Requests': '1',
+            "Cookies":"cmplz_consent_status:allow"
+}
         try:
 
 
@@ -36,8 +40,13 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # Достать статью в переменную txt
 
 
+                tttt = ""
+                tttt = soup.find(class_='panel-body news_text')
+                txxt = ""
+                txxt = bs(str(tttt),"html.parser").findAll("p")
                 txt = ""
-                txt = soup.find(class_='article-text').text
+                for i in txxt:
+                    txt+=i.text+"\n"
 
 
                 # ---------------------------------------Обработчик, можно не трогать----------------------------------------------
@@ -66,9 +75,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # ******************************************************************************************************************************************
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/'+"Aztrend.az") == []:
+                    if os.listdir('files/'+"Qafqazinfo.az") == []:
                         try:
-                            with open(f'files/'+ "Aztrend.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Qafqazinfo.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{titul}\n\n{url}\n\n{txt}')
 
                         except Exception as a:
@@ -92,7 +101,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         # ******************************************************************************************************************************************
 
                         try:
-                            with open(f'files/'+ "Aztrend.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Qafqazinfo.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{titul}\n\n{url}\n\n{txt}')
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
@@ -168,41 +177,38 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         # Тут нормальный парсинг, нужно достать ссылки на новости
 
         # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↓
-        headers = {'Accept': '*/*', 'Connection': 'keep-alive',
-                'User-Agent': f'{us.random}',
-                'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
-        url = 'https://az.trend.az/archive/'+ year +'-' + month + '-' + day
-
-        print(url)
-
-        req = requests.get(url, headers=headers)
-
-        src = req.text
-        # print(src)
-        soup = bs(src, 'html.parser')
-        for stat in soup.findAll(class_="category-article"):
-            soap = bs(str(stat), 'html.parser')
-            if str(stat).find('a') != None:
-                print("[DEBUG] find <a>")
-                for url_n in soap.findAll('a',class_="article-link"):
-                    print(type(url_n))
-                    if urls_list.count(url_n.get('href')) == 0:
-                        urls_list.append([url_n.get('href'), caunt, data_master_scan_in])
-                        caunt += 1  # Это нужно оставить, так как по нему создаются файлы txt
-                    # break
+        checked = 0
+        pages = 1
+        p = 1
+        while pages >= p:
+            headers = {'Accept': '*/*', 
+            'Connection': 'keep-alive',
+            'User-Agent': us.random,
+            'Cache-Control': 'max-age=0', 'DNT': '1', 
+            'Upgrade-Insecure-Requests': '1',
+            }
+            page = requests.get("https://qafqazinfo.az/news/arxiv/"+ year +"-" +month+ "-" +day+ "?page="+str(p),headers=headers)
+            soup = bs(page.text,"html.parser")
+            all_news = soup.findAll(class_ = "row search")
+            if(checked):
+                pass
             else:
-                break
-
+                pages = int(soup.findAll(class_ = "page")[-1].text)
+                checked = 1
+            for news in all_news:
+                link = bs(str(news),"html.parser").findAll("a")[0]["href"]
+                urls_list.append([link, caunt, data_master_scan_in])
+            if(p <= pages):
+                p+=1
         print("[URLS_LIST]",urls_list)
+        
         # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↑
-    
         # time.sleep(2)
         loop = asyncio.get_event_loop()
         future = asyncio.ensure_future(fetch_async(urls_list))
         loop.run_until_complete(future)
 
         print(time.time() - timer)
-
 
 
 

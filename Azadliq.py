@@ -54,7 +54,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # Достать статью в переменную txt
 
 
-
+                txt = ""
                 txt = soup.find(class_='wsw').text
 
 

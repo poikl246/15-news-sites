@@ -36,8 +36,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # Достать статью в переменную txt
 
 
-
+                tttt = ""
                 tttt = soup.find(class_='texts mb-site')
+                txxt = ""
                 txxt = bs(str(tttt),"html.parser").findAll("p")
                 txt = ""
                 for i in txxt:
@@ -162,8 +163,6 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         day = str(data_time[2])
         month = str(data_time[1])
         year = str(data_time[0])
-
-        day, month, year = "16","12","2021"
 
         timer = time.time()
         urls_list = []
