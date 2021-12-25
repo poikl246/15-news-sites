@@ -5,11 +5,14 @@ from selenium import webdriver
 import time
 from multiprocessing import Pool
 import random
+from fuzzywuzzy import fuzz
 
 
 # options
 
+url_list_output = []
 
+output_data = []
 options = webdriver.FirefoxOptions()
 
 # user-agent
@@ -23,12 +26,14 @@ options.set_preference("dom.webdriver.enabled", False)
 # headless mode
 # options.headless = False
 
+
+
 def func_chunks_generators(seq, size):
     return (seq[i::size] for i in range(size))
 
 
 
-
+# data_master_scan = []
 def get_data(url_list):
     try:
         driver = webdriver.Firefox(
@@ -38,15 +43,81 @@ def get_data(url_list):
 
         # "C:\\users\\selenium_python\\chromedriver\\chromedriver.exe"
         # r"C:\users\selenium_python\chromedriver\chromedriver.exe"
-        for url in url_list:
+        for url, caunt, data_master_scan in url_list:
             driver.get(url=url)
             time.sleep(2)
             src = driver.page_source
             soup = BeautifulSoup(src, 'html.parser')
-            text = soup.find(class_="news-content").text
+            txt = soup.find(class_="news-content").text
+            print(txt)
+            text_list = txt.lower().split(' ')
+            # print(text_list)
+            # caunt_local = 0
+            exit_data = []
+            for one_line in data_master_scan:
+                caunt_local = 0
+                for twe in one_line:
+                    for master_text in text_list:
+                        if fuzz.ratio(master_text, twe) >= 80:
+                            caunt_local += 1
+                            break
 
+                if caunt_local == len(one_line):
+                    exit_data.append(1)
+                else:
+                    exit_data.append(0)
+
+            print(exit_data, url)
+
+            # ******************************************************************************************************************************************
+
+            # moderator меняем на название сайта
+
+            if exit_data.count(1) != 0:
+                if os.listdir('files/musavat') == []:
+                    try:
+                        with open(f'files/musavat/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                            file.write(f'{url}\n\n{txt}')
+                        # caunt += 1
+                    except Exception as a:
+                        print(a)
+                    output_data.append([exit_data, url])
+                    # url_list_output.append(url)
+
+                # ----------------------------------------------не трогать-------------------------------------------------------------
+
+                else:
+                    for dir_site in os.listdir('files'):
+                        for dir_page in os.listdir(f'files/{dir_site}'):
+                            with open(f'files/{dir_site}/{dir_page}', 'r') as file:
+                                file.readline()
+                                file.readline()
+                                file.readline()
+                                if fuzz.ratio(txt, file.read()) >= 50:
+                                    return 0
+
+                    # ******************************************************************************************************************************************
+
+                    # musavat меняем на название сайта
+
+                    try:
+                        with open(f'files/musavat/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                            file.write(f'{url}\n\n{txt}')
+                            output_data.append([exit_data, url])
+                            # url_list_output.append(url)
+                        # caunt += 1
+
+
+                    except Exception as a:
+                        print(a)
+
+                # ******************************************************************************************************************************************
+
+                print(output_data)
 
         time.sleep(random.randrange(3, 10))
+
+
     except Exception as ex:
         print(ex)
     finally:
@@ -73,13 +144,13 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
 
         driver.get(url='https://musavat.com/archive')
         time.sleep(4)
-
-        for i in range(1, 100):
+        caunt_l = 0
+        for i in range(1, 2):
             url = f'https://musavat.com/search?text=&type=news&date_begin={data_time[2]}.{data_time[1]}.{data_time[0]}&date_end={data_time2[2]}.{data_time2[1]}.{data_time2[0]}&id_news_category=&id_author=&page={i}'
             driver.get(url=url)
             time.sleep(4)
             src = driver.page_source
-
+            # print(data_master_scan_in)
             try:
                 soup = BeautifulSoup(src, 'html.parser')
 
@@ -88,16 +159,17 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
 
                 for data in soup.find_all(class_='form-group col-sm-3 col-md-3'):
                     ur = 'https://musavat.com' + data.find('a').get('href')
-                    if url_list_out.count(ur) == 0:
-                        url_list_out.append(ur)
+
+                    url_list_out.append([ur, caunt_l, data_master_scan_in])
+                    caunt_l += 1
 
                 print(url_list_out)
 
 
             except:
                 print('NO')
+        return url_list_out
 
-        time.sleep(1)
     except Exception as ex:
         print(ex)
     finally:
@@ -122,6 +194,8 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     p.map(get_data, urls_list)
 
 
+
+
 if __name__ == "__main__":
-    ojr = [['Kennedinin', 'əlaqədar'], ['bilməməsi'], ['k']]
-    parsing(data_master_scan_in = ojr, data_time=int(time.time()))
+    ojr = [['əlaqəsini', 'həyata'], ['edən'], ['k']]
+    print(parsing(data_master_scan_in = ojr, data_time=int(time.time())))

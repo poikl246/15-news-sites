@@ -985,3 +985,1152 @@ JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.t
 JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3818 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1640441062571	Marionette	INFO	Stopped listening on port 57125
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1640441580713	geckodriver	INFO	Listening on 127.0.0.1:55159
+1640441583792	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55160" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileCo3F5z"
+1640441584048	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileCo3F5z\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55160/devtools/browser/8054c5fe-6e31-48c7-80f3-d8a6bb95dd8b
+1640441585738	Marionette	INFO	Listening on port 55166
+1640441585842	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640441804679	Marionette	INFO	Stopped listening on port 55166
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "55350" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileDdcM0l"
+1640441661246	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileDdcM0l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55350/devtools/browser/8b6c54a7-4839-4af0-9f61-6288e137fbdb
+1640441662935	Marionette	INFO	Listening on port 55356
+1640441663057	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640441712073	Marionette	INFO	Stopped listening on port 55356
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640441800109	geckodriver	INFO	Listening on 127.0.0.1:54217
+1640441803189	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54218" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileJXxXuj"
+1640441803443	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileJXxXuj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54218/devtools/browser/ce5a93ef-1422-436c-b443-3b4bc07b2718
+1640441805204	Marionette	INFO	Listening on port 54224
+1640441805249	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640441850946	Marionette	INFO	Stopped listening on port 54224
+1640441955247	geckodriver	INFO	Listening on 127.0.0.1:54440
+1640441958328	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54441" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile5V4IHY"
+1640441958632	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile5V4IHY\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54441/devtools/browser/5fb4f24e-026d-4b10-ab67-309ef2f5f9e3
+1640441960421	Marionette	INFO	Listening on port 54447
+1640441960484	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442016488	Marionette	INFO	Stopped listening on port 54447
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+--marionette" "--remote-debugging-port" "54571" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilexs4usi"
+1640441989996	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilexs4usi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54571/devtools/browser/d5194812-a3cd-4157-a677-51acc627a789
+1640441991566	Marionette	INFO	Listening on port 54577
+1640441991815	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442008121	Marionette	INFO	Stopped listening on port 54577
+1640442012600	geckodriver	INFO	Listening on 127.0.0.1:54701
+1640442015691	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54702" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilefdUbiL"
+1640442015969	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilefdUbiL\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54702/devtools/browser/be5661fc-1848-483f-881c-0e7e43fe307c
+1640442017688	Marionette	INFO	Listening on port 54709
+1640442017730	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442034529	Marionette	INFO	Stopped listening on port 54709
+1640442243750	geckodriver	INFO	Listening on 127.0.0.1:61789
+1640442246818	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61790" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileY45dbl"
+1640442247060	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileY45dbl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61790/devtools/browser/4afceb1b-38c8-4437-9592-1bda64c9e245
+1640442248779	Marionette	INFO	Listening on port 61808
+1640442248859	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442264434	Marionette	INFO	Stopped listening on port 61808
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640442644998	geckodriver	INFO	Listening on 127.0.0.1:49420
+1640442648096	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49421" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileW6NO2V"
+1640442648350	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileW6NO2V\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49421/devtools/browser/ef454638-ddde-4472-97e0-d251a3629569
+1640442650085	Marionette	INFO	Listening on port 49427
+1640442650148	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442665350	Marionette	INFO	Stopped listening on port 49427
+1640442702331	geckodriver	INFO	Listening on 127.0.0.1:49578
+1640442705417	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49579" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile3DyEDh"
+1640442705670	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile3DyEDh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49579/devtools/browser/34866afb-4135-4789-9aba-bb796b2f8f7f
+1640442707293	Marionette	INFO	Listening on port 49585
+1640442707479	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442723130	Marionette	INFO	Stopped listening on port 49585
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640442734919	geckodriver	INFO	Listening on 127.0.0.1:49729
+1640442737964	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49730" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile1hEU9Z"
+1640442738210	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile1hEU9Z\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49730/devtools/browser/577b2837-4132-4673-a25f-fa6bf83eefd3
+1640442739760	Marionette	INFO	Listening on port 49736
+1640442740012	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442754734	Marionette	INFO	Stopped listening on port 49736
+1640442812407	geckodriver	INFO	Listening on 127.0.0.1:63815
+1640442815498	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63816" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileWchXWN"
+1640442815749	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileWchXWN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63816/devtools/browser/a162eec6-992e-4923-bb14-ac9395596eae
+1640442817422	Marionette	INFO	Listening on port 63822
+1640442817560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442832141	Marionette	INFO	Stopped listening on port 63822
+1640442895654	geckodriver	INFO	Listening on 127.0.0.1:63971
+1640442898733	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63972" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilelOSOIS"
+1640442898989	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilelOSOIS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63972/devtools/browser/436c004a-855c-43f1-993b-961cd1dc2efb
+1640442900656	Marionette	INFO	Listening on port 63978
+1640442900789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640442915456	Marionette	INFO	Stopped listening on port 63978
+1640443009949	geckodriver	INFO	Listening on 127.0.0.1:64157
+1640443013020	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64158" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileHLA9Re"
+1640443013262	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileHLA9Re\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64158/devtools/browser/43c937c2-aed8-4ada-b02c-efc6760ca78b
+1640443014896	Marionette	INFO	Listening on port 64164
+1640443015074	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443030107	Marionette	INFO	Stopped listening on port 64164
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640443085538	geckodriver	INFO	Listening on 127.0.0.1:50649
+1640443088621	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50650" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileK43EUx"
+1640443088878	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileK43EUx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50650/devtools/browser/1cc7ef9d-dcb3-4383-92a3-7006007ebad1
+1640443090556	Marionette	INFO	Listening on port 50659
+1640443090659	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443213881	Marionette	INFO	Stopped listening on port 50659
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 12384, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+100504	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileTXkl5Z\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50768/devtools/browser/3fa5e514-7510-4e3c-b5e0-9d24a4a0d11c
+1640443102261	Marionette	INFO	Listening on port 50780
+1640443102313	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443154090	Marionette	INFO	Stopped listening on port 50780
+1640443367162	geckodriver	INFO	Listening on 127.0.0.1:51141
+1640443370250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51142" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilesZoUmw"
+1640443370515	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilesZoUmw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51142/devtools/browser/9a33b975-32a8-4b7d-8bb7-6d1aece7c1ad
+1640443372071	Marionette	INFO	Listening on port 51149
+1640443372300	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443416100	Marionette	INFO	Stopped listening on port 51149
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640443417076	geckodriver	INFO	Listening on 127.0.0.1:53537
+1640443420160	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53538" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileU1MirR"
+1640443420406	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileU1MirR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53538/devtools/browser/b3160c3c-b292-4ac0-97b2-36300b71b752
+1640443421906	Marionette	INFO	Listening on port 53544
+1640443422198	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443428395	Marionette	INFO	Stopped listening on port 53544
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640443488979	geckodriver	INFO	Listening on 127.0.0.1:53778
+1640443498037	geckodriver	INFO	Listening on 127.0.0.1:53789
+1640443501116	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53790" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile3sHZtz"
+1640443501357	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile3sHZtz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53790/devtools/browser/9054a848-9a00-4793-977a-8b966c849841
+1640443503157	Marionette	INFO	Listening on port 53796
+1640443503268	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443521258	Marionette	INFO	Stopped listening on port 53796
+1640443536173	geckodriver	INFO	Listening on 127.0.0.1:53930
+1640443539225	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53931" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile1zLRn3"
+1640443539664	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile1zLRn3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53931/devtools/browser/222722ff-f2f1-4c12-b971-f952d318c320
+1640443541351	Marionette	INFO	Listening on port 53937
+1640443541393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443556510	Marionette	INFO	Stopped listening on port 53937
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640443557400	geckodriver	INFO	Listening on 127.0.0.1:54052
+1640443560487	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54053" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile8Yye6X"
+1640443560731	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile8Yye6X\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54053/devtools/browser/fea5a7d0-afee-49cb-8e18-704be9774182
+1640443562238	Marionette	INFO	Listening on port 54061
+1640443562541	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4714 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7433 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5346 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6459 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1168 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443998219	Marionette	INFO	Stopped listening on port 54061
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ng: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443777545	Marionette	INFO	Stopped listening on port 57282
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640443778579	geckodriver	INFO	Listening on 127.0.0.1:57397
+1640443781662	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57398" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilecydfkk"
+1640443781904	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilecydfkk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57398/devtools/browser/25b3dc42-1ba2-4ae8-9da8-20cd23a1eef6
+1640443783449	Marionette	INFO	Listening on port 57406
+1640443783714	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6194 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 63: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6402 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5679 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1385 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4530 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7092 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2580 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5367 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 154 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3417 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6693 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 855 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6921 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 305 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5987 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript error: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js, line 227: uncaught exception: TagError: adsbygoogle.push() error: No slot size for availableWidth=0
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 40 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640443997276	Marionette	INFO	Stopped listening on port 57406
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+rofileVy1hp7"
+1640443992538	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileVy1hp7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58212/devtools/browser/538bdd4d-d4db-4296-8c4f-a58ad4ea381b
+1640443994293	Marionette	INFO	Listening on port 58218
+1640443994329	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444012907	Marionette	INFO	Stopped listening on port 58218
+1640444013849	geckodriver	INFO	Listening on 127.0.0.1:58353
+1640444016924	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58354" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileipM7m0"
+1640444017184	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileipM7m0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58354/devtools/browser/6910fe25-5a92-46df-8a2a-21d9cac969d2
+1640444018744	Marionette	INFO	Listening on port 58361
+1640444018978	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640444027000	Marionette	INFO	Stopped listening on port 58361
+1640444097285	geckodriver	INFO	Listening on 127.0.0.1:58634
+1640444100381	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58635" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileshtYUN"
+1640444100621	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileshtYUN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58635/devtools/browser/1b93a4fe-202e-4738-a318-9e2b436c9717
+1640444102217	Marionette	INFO	Listening on port 58642
+1640444102426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444119712	Marionette	INFO	Stopped listening on port 58642
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640444120697	geckodriver	INFO	Listening on 127.0.0.1:58756
+1640444123771	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58757" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilejoxGYa"
+1640444124036	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilejoxGYa\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58757/devtools/browser/3c4bf6f1-d5e1-47f3-bd23-cb02e141f563
+1640444125704	Marionette	INFO	Listening on port 58763
+1640444125814	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640444133302	Marionette	INFO	Stopped listening on port 58761640444133781	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58809" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileiN6jPi"
+1640444134021	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileiN6jPi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58809/devtools/browser/0271a5fa-3fa5-4a69-b10f-138bcd151ecb
+1640444135579	Marionette	INFO	Listening on port 58819
+1640444135822	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444151647	Marionette	INFO	Stopped listening on port 58819
+1640444152520	geckodriver	INFO	Listening on 127.0.0.1:58929
+1640444155590	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58930" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilel2fufi"
+1640444155835	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilel2fufi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58930/devtools/browser/a4e594f7-e7e4-4225-aab5-e79ab49a151d
+1640444157460	Marionette	INFO	Listening on port 58936
+1640444157656	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640444159703	Marionette	INFO	Stopped listening on port 58936
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1640444251243	geckodriver	INFO	Listening on 127.0.0.1:59032
+1640444254298	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59033" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileg8TKAA"
+1640444254544	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileg8TKAA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59033/devtools/browser/22fad2b5-21f1-4219-845d-ba6b401a088f
+1640444256320	Marionette	INFO	Listening on port 59039
+1640444256436	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444271133	Marionette	INFO	Stopped listening on port 59039
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640444272040	geckodriver	INFO	Listening on 127.0.0.1:59151
+1640444275133	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59152" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileTj6Vyp"
+1640444275380	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileTj6Vyp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59152/devtools/browser/06329999-0d68-41f3-87d9-87434012fc93
+1640444276943	Marionette	INFO	Listening on port 59158
+1640444277179	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640444320699	Marionette	INFO	Stopped listening on port 59158
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+rofileiXynH5"
+1640444315470	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileiXynH5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59232/devtools/browser/64d6ccd3-ae8e-4ff2-ba56-991c4a519d93
+1640444317121	Marionette	INFO	Listening on port 59239
+1640444317295	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444331982	Marionette	INFO	Stopped listening on port 59239
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640444333024	geckodriver	INFO	Listening on 127.0.0.1:56305
+1640444336082	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56306" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilem1MG9X"
+1640444336343	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilem1MG9X\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56306/devtools/browser/2f071d2b-38e8-4bec-aa4e-cf3a42c713ac
+1640444338006	Marionette	INFO	Listening on port 56312
+1640444338125	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3705 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4177 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1471 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4501 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4977 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2070 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3364 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7530 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6384 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2947 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7716 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2248 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1340 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4595 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2784 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3695 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444436457	Marionette	INFO	Stopped listening on port 56312
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640444671429	geckodriver	INFO	Listening on 127.0.0.1:54494
+1640444674485	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54495" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileWBNcyw"
+1640444674843	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileWBNcyw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54495/devtools/browser/eee140ab-4d23-4e8c-a82d-7b91c0ac8dd2
+1640444676589	Marionette	INFO	Listening on port 54501
+1640444676639	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444746637	Marionette	INFO	Stopped listening on port 54501
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "54619" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilerux8gE"
+1640444693762	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilerux8gE\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54619/devtools/browser/74d55c57-3a3c-451d-954c-73b93c1c24f3
+1640444695510	Marionette	INFO	Listening on port 54630
+1640444695583	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444713405	Marionette	INFO	Stopped listening on port 54630
+1640444714661	geckodriver	INFO	Listening on 127.0.0.1:54750
+1640444717741	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54751" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilesRoJNN"
+1640444717992	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilesRoJNN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54751/devtools/browser/ded9230d-d8b1-4b19-8326-55dc0ef1c999
+1640444719758	Marionette	INFO	Listening on port 54757
+1640444719801	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444736615	Marionette	INFO	Stopped listening on port 54757
+1640444737860	geckodriver	INFO	Listening on 127.0.0.1:54882
+1640444740930	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54883" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilenhY5cq"
+1640444741173	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofilenhY5cq\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54883/devtools/browser/c6f7fb11-ed2a-43fe-9f69-0f3cd4006ad9
+1640444742808	Marionette	INFO	Listening on port 54889
+1640444742991	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://mc.yandex.ru/metrika/watch.js, line 10: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6474 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7188 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5124 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://qaynarinfo.az/theme/frontend/new/style/default/js/jquery.js?ve, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4356 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1382 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 35 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2122 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7423 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4045 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3522 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5160 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1240 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6069 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7809 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3394 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://medianews.az/, line 74: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: https://quantcast.mgr.consensu.org/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js, line 18: TypeError: window.__tcfapi is not a function
+JavaScript error: https://quantcast.mgr.consensu.org/tcfv2/cmp2.js?referer=www.themoneytizer.com, line 1: TypeError: window.__tcfapi is not a function
+JavaScript warning: https://www.myjscript.com/ajax/jquery.min.php, line 3: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.myjscript.com/ajax/jquery.min.php, line 47: SyntaxError: expected expression, got '<'
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2880 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1640444849522	Marionette	INFO	Stopped listening on port 54889
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014F,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
