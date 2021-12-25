@@ -20,11 +20,11 @@ options.set_preference("general.useragent.override",
                        "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0")
 
 # disable webdriver mode
-options.set_preference("dom.webdriver.enabled", False)
+options.set_preference("dom.webdriver.enabled", True)
 
 
 # headless mode
-# options.headless = False
+options.headless = True
 
 
 
@@ -48,7 +48,7 @@ def get_data(url_list):
             time.sleep(2)
             src = driver.page_source
             soup = BeautifulSoup(src, 'html.parser')
-            txt = soup.find(class_="news-content").text
+            txt = soup.find(class_="news-content").text.replace('\n', ' ')
             print(txt)
             text_list = txt.lower().split(' ')
             # print(text_list)
@@ -82,6 +82,7 @@ def get_data(url_list):
                     except Exception as a:
                         print(a)
                     output_data.append([exit_data, url])
+                    # return [exit_data, url]
                     # url_list_output.append(url)
 
                 # ----------------------------------------------не трогать-------------------------------------------------------------
@@ -104,6 +105,7 @@ def get_data(url_list):
                         with open(f'files/musavat/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                             file.write(f'{url}\n\n{txt}')
                             output_data.append([exit_data, url])
+                            # return [exit_data, url]
                             # url_list_output.append(url)
                         # caunt += 1
 
@@ -145,7 +147,7 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         driver.get(url='https://musavat.com/archive')
         time.sleep(4)
         caunt_l = 0
-        for i in range(1, 2):
+        for i in range(1, 3):
             url = f'https://musavat.com/search?text=&type=news&date_begin={data_time[2]}.{data_time[1]}.{data_time[0]}&date_end={data_time2[2]}.{data_time2[1]}.{data_time2[0]}&id_news_category=&id_author=&page={i}'
             driver.get(url=url)
             time.sleep(4)
@@ -181,17 +183,18 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
     url_list_output = []
 
-    output_data = []
+
 
 
     # exit()
 
     # process_count = int(input("Enter the number of processes: "))
-    process_count = 1
+    process_count = 6
     urls_list = list(func_chunks_generators(pars_one(data_master_scan_in, data_time), process_count))
     print(urls_list)
     p = Pool(processes=process_count)
     p.map(get_data, urls_list)
+
 
 
 
