@@ -23,9 +23,11 @@ options.set_preference("dom.webdriver.enabled", False)
 # headless mode
 # options.headless = False
 
-def func_chunks_generators(lst, n):
-    for i in range(0, len(lst), n):
-        yield lst[i : i + n]
+def func_chunks_generators(seq, size):
+    return (seq[i::size] for i in range(size))
+
+
+
 
 def get_data(url_list):
     try:
@@ -39,6 +41,10 @@ def get_data(url_list):
         for url in url_list:
             driver.get(url=url)
             time.sleep(2)
+            src = driver.page_source
+            soup = BeautifulSoup(src, 'html.parser')
+            text = soup.find(class_="news-content").text
+
 
         time.sleep(random.randrange(3, 10))
     except Exception as ex:
@@ -105,14 +111,12 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
     output_data = []
 
-    print(pars_one(data_master_scan_in, data_time))
 
-    exit()
+    # exit()
 
-    process_count = int(input("Enter the number of processes: "))
-    url = input("Enter the URL: ")
-    urls_list = [url] * process_count
-    urls_list = [urls_list]*4
+    # process_count = int(input("Enter the number of processes: "))
+    process_count = 1
+    urls_list = list(func_chunks_generators(pars_one(data_master_scan_in, data_time), process_count))
     print(urls_list)
     p = Pool(processes=process_count)
     p.map(get_data, urls_list)
