@@ -1,0 +1,3 @@
+1640509722910	geckodriver	INFO	Listening on 127.0.0.1:57581
+1640509725957	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileWAoms2"
+*** You are running in headless mode.
