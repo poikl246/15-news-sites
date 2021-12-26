@@ -30,7 +30,16 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # print(resp)
                 soup = BeautifulSoup(resp, 'html.parser')
 
-                txt = soup.find(class_='newsin-text').text
+                tri = soup.find(class_='newsin-text')
+                txt = ""
+                for i in tri:
+                    for l in BeautifulSoup(str(i),"html.parser").findAll("p"):
+
+                        if txt.find(l.text) == -1:
+                            txt+=l.text+"\n"
+
+
+
 
                 text_list = txt.lower().split(' ')
                 # print(text_list)
@@ -54,10 +63,15 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/moderator') == []:
+                    if os.listdir('files/Moderator.az') == []:
                         try:
-                            with open(f'files/moderator/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                            with open(f'files/Moderator.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                                file.write(f'{url}\n\n')
+                                for i in txt:
+                                    try:
+                                        file.write(f'{i}')
+                                    except:
+                                        pass
 
                         except Exception as a:
                             print(a)
@@ -68,7 +82,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     else:
                         for dir_site in os.listdir('files'):
                             for dir_page in os.listdir(f'files/{dir_site}'):
-                                with open(f'files/{dir_site}/{dir_page}', 'r') as file:
+                                with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
                                     file.readline()
                                     file.readline()
                                     file.readline()
@@ -77,8 +91,13 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
 
                         try:
-                            with open(f'files/moderator/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                            with open(f'files/Moderator.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                                file.write(f'{url}\n\n')
+                                for i in txt:
+                                    try:
+                                        file.write(f'{i}')
+                                    except:
+                                        pass
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
 
@@ -127,8 +146,6 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     def pars(data_master_scan_in, data_time=(time.time())):
         url_list_output = []
         output_data = []
-
-        f = open('files/moderator/123.txt', 'w')
 
         data_time = time.localtime(data_time)
         print(data_time)
