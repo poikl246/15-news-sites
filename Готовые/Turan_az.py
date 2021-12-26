@@ -91,7 +91,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     else:
                         for dir_site in os.listdir('files'):
                             for dir_page in os.listdir(f'files/{dir_site}'):
-                                with open(f'files/{dir_site}/{dir_page}', 'r') as file:
+                                with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
                                     file.readline()
                                     file.readline()
                                     file.readline()
