@@ -19,12 +19,14 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
     async def fetch_url_data(session, url, caunt, data_master_scan):
         print(url, caunt)
-        headers = {'Accept': '*/*', 'Connection': 'keep-alive',
-                   'User-Agent': f'{us.random}',
-                   'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
+        headers = {'Accept': '*/*', 
+            'Connection': 'keep-alive',
+            'User-Agent': us.random,
+            'Cache-Control': 'max-age=0', 'DNT': '1', 
+            'Upgrade-Insecure-Requests': '1',
+            "Cookies":"cmplz_consent_status:allow"
+}
         try:
-
-
             async with session.get(url, headers=headers) as response:
                 resp = await response.text()
                 # print(resp)
@@ -37,7 +39,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
 
                 tttt = ""
-                tttt = soup.find(class_='texts mb-site')
+                tttt = soup.find(class_='entry-content')
                 txxt = ""
                 txxt = bs(str(tttt),"html.parser").findAll("p")
                 txt = ""
@@ -71,9 +73,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # ******************************************************************************************************************************************
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/'+"Apa.az") == []:
+                    if os.listdir('files/'+"Meydan.tv") == []:
                         try:
-                            with open(f'files/'+ "Apa.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Meydan.tv" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{titul}\n\n{url}\n\n{txt}')
 
                         except Exception as a:
@@ -87,7 +89,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     else:
                         for dir_site in os.listdir('files'):
                             for dir_page in os.listdir(f'files/{dir_site}'):
-                                with open(f'files/{dir_site}/{dir_page}', 'r') as file:
+                                with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
                                     file.readline()
                                     file.readline()
                                     file.readline()
@@ -97,7 +99,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         # ******************************************************************************************************************************************
 
                         try:
-                            with open(f'files/'+ "Apa.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Meydan.tv" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{titul}\n\n{url}\n\n{txt}')
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
@@ -164,6 +166,11 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         month = str(data_time[1])
         year = str(data_time[0])
 
+        if(int(day) // 10 == 0):
+            day = "0" + day
+        if(int(month) // 10 == 0):
+            month = "0" + month
+
         timer = time.time()
         urls_list = []
         caunt = 0
@@ -173,50 +180,28 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         # Тут нормальный парсинг, нужно достать ссылки на новости
 
         # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↓
-        max_page = 1
-        current_page = 1
-        while(current_page <= max_page):
-            headers = {'Accept': '*/*', 'Connection': 'keep-alive',
-                    'User-Agent': f'{us.random}',
-                    'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
-            url = 'https://apa.az/az/arxiv/axtaris-neticesi?search=&site_type=1&type=4&start_date='+month+'%2F'+day+'%2F'+year+'&end_date='+month+'%2F'+str(int(day)+1)+'%2F'+year+"&page="+str(current_page)
+        stop = 0
+        page = 1
+        urls=[]
+        while(not(stop)):
+            print("https://www.meydan.tv/az/?sfid=2268&post_date="+day+month+year+"+"+day+month+year+"1&sf_paged="+str(page))
+            r = requests.get("https://www.meydan.tv/az/?sfid=2268&post_date="+day+month+year+"+"+day+month+year+"1&sf_paged="+str(page))
+            soup = bs(r.text,"html.parser")
 
-            print(url)
-            
-            req = requests.get(url, headers=headers)
-
-            src = req.text
-            # print(src)
-            soup = bs(src, 'html.parser')
-
-            max_page = 0
-
-            pagnition = soup.findAll(class_="pagination")
-
-            pages = bs(str(pagnition),"html.parser").findAll("li")
-
-            for op in pages:
-                try:
-                    print(op.text)
-                    x = int(op.text.replace("\n",""))
-                    print("[X] ",x)
-                    if(x>max_page):
-                        max_page = x
-                except:
-                    pass
-            print(max_page)
-            for stat in soup.findAll(class_="item"):
-                soap = bs(str(stat), 'html.parser')
-                if str(stat).find('a') != None:
-                    print("[DEBUG] find <a>")
-                    for url_n in soap.findAll('a'):
-                        if urls_list.count(url_n.get('href')) == 0:
-                            urls_list.append([url_n.get('href'), caunt, data_master_scan_in])
-                            caunt += 1  # Это нужно оставить, так как по нему создаются файлы txt
-                        # break
-                else:
-                    break
-            current_page += 1
+            if len(soup.findAll("article")) == 0:
+                stop = 1
+                print("[STOPPED]")
+                break
+            else:
+                for links in soup.findAll("article"):
+                    link = bs(str(links),"html.parser").find("a")["href"]
+                    try:
+                        urls.index(link)
+                    except:
+                        urls_list.append([link, caunt, data_master_scan_in])
+                        urls.append(link)
+                        caunt+=1
+            page+=1
 
         print("[URLS_LIST]",urls_list)
         

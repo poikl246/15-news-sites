@@ -8,9 +8,6 @@ from bs4 import BeautifulSoup as bs
 import requests
 from fake_useragent import UserAgent
 
-# global site_name
-# site_name = "Azertag.az"
-
 us = UserAgent()
 print(us.random)
 
@@ -21,7 +18,6 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     output_data = []
 
     async def fetch_url_data(session, url, caunt, data_master_scan):
-        # global site_name
         print(url, caunt)
         headers = {'Accept': '*/*', 'Connection': 'keep-alive',
                    'User-Agent': f'{us.random}',
@@ -34,12 +30,19 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # print(resp)
                 soup = bs(resp, 'html.parser')
 
+                titul = soup.find("title").text
+
                 # -----------------------------------------------------------------------------------
                 # Достать статью в переменную txt
 
-
-
-                txt = soup.find(class_='content-title').text + '\n\n' + soup.find(id='selectedtext').text
+                tttt = ""
+                tttt = soup.find(id='selectedtext')
+                txxt = ""
+                txxt = bs(str(tttt),"html.parser").findAll("p")
+                txt = ""
+                for i in txxt:
+                    if( txt.find(i.text) == -1):
+                            txt+=i.text+"\n"
 
 
                 # ---------------------------------------Обработчик, можно не трогать----------------------------------------------
@@ -68,10 +71,10 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # ******************************************************************************************************************************************
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/'+ 'Azertag') == []:
+                    if os.listdir('files/'+"Azertag.az") == []:
                         try:
-                            with open(f'files/'+ 'Azertag' +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                            with open(f'files/'+ "Azertag.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                                file.write(f'{titul}\n\n{url}\n\n{txt}')
 
                         except Exception as a:
                             print(a)
@@ -84,7 +87,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     else:
                         for dir_site in os.listdir('files'):
                             for dir_page in os.listdir(f'files/{dir_site}'):
-                                with open(f'files/{dir_site}/{dir_page}', 'r') as file:
+                                with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
                                     file.readline()
                                     file.readline()
                                     file.readline()
@@ -94,8 +97,8 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         # ******************************************************************************************************************************************
 
                         try:
-                            with open(f'files/'+ 'Azertag' +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                            with open(f'files/'+ "Azertag.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                                file.write(f'{titul}\n\n{url}\n\n{txt}')
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
 
@@ -153,9 +156,6 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         url_list_output = []
         output_data = []
 
-        f = open('files/'+ 'Azertag' +'/123.txt', 'w')
-        f.close()
-
         data_time = time.localtime(data_time)
         print(data_time)
         print(data_time[0])
@@ -168,10 +168,15 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         urls_list = []
         caunt = 0
 
+
+        # ******************************************************************************************************************************************
+        # Тут нормальный парсинг, нужно достать ссылки на новости
+
+        # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↓
         headers = {'Accept': '*/*', 'Connection': 'keep-alive',
-                   'User-Agent': f'{us.random}',
-                   'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
-        url = 'https://azertag.az/arxiv/' + year + '/' + month + '/' + day + '/official_chronicle'
+                'User-Agent': f'{us.random}',
+                'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
+        url = 'https://azertag.az/arxiv/'+ year +'/' + month + '/' + day + '/official_chronicle'
 
         print(url)
 
@@ -179,6 +184,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
         src = req.text
         # print(src)
+        ll = [] 
         soup = bs(src, 'html.parser')
         for stat in soup.findAll(class_="news-item float-left withimg"):
             soap = bs(str(stat), 'html.parser')
@@ -186,14 +192,17 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 print("[DEBUG] find <a>")
                 for url_n in soap.findAll('a'):
                     if urls_list.count(url_n.get('href')) == 0:
-                        urls_list.append(["https://azertag.az" + url_n.get('href'), caunt, data_master_scan_in])
+                        try:
+                            ll.index("https://azertag.az"+url_n.get('href'))
+                        except:
+                            ll.append("https://azertag.az"+url_n.get('href'))
+                            urls_list.append(["https://azertag.az"+url_n.get('href'), caunt, data_master_scan_in])
                         caunt += 1  # Это нужно оставить, так как по нему создаются файлы txt
                     # break
             else:
                 break
 
-
-            # print(urls_list)
+        print(urls_list)
         # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↑
     
         # time.sleep(2)
@@ -211,8 +220,8 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     return url_list_output, output_data
 
 if __name__ == "__main__":
-    ojr = [['Kennedinin', 'əlaqədar'], ['instaqram'], ['xəbər']]
-    parsing(data_master_scan_in = ojr, data_time=int(time.time() - 2))
+    ojr = [['Kennedinin', 'əlaqədar'], ['Prezident'], ['k']]
+    parsing(data_master_scan_in = ojr, data_time=int(time.time()))
 
 # Ну потом можно принты почистить, просто не очень прикольно смотреть на пустую консоль
 
