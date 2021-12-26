@@ -54,14 +54,20 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     mi = mo
     while int(month) >= int(m):
         r = requests.get("https://www.abzas.net/page/" +str(mi)+ "/?s",headers=headers)
-        y , m = bs(str(bs(r.text,"html.parser").findAll(class_="td_module_16 td_module_wrap td-animation-stack td-meta-info-hide")[-1]),"html.parser").find("a")["href"].split("/")[3:5]
+        try:
+            y , m = bs(str(bs(r.text,"html.parser").findAll(class_="td_module_16 td_module_wrap td-animation-stack td-meta-info-hide")[-1]),"html.parser").find("a")["href"].split("/")[3:5]
+        except:
+            break
         mi-=10
-    print("[CHANGED]",mo)
+        print("[MI]",mi)
+    print("[CHANGED]",mi)
     while int(month) < int(m):
         r = requests.get("https://www.abzas.net/page/" +str(mi)+ "/?s",headers=headers)
         y , m = bs(str(bs(r.text,"html.parser").findAll(class_="td_module_16 td_module_wrap td-animation-stack td-meta-info-hide")[-1]),"html.parser").find("a")["href"].split("/")[3:5]
         mi+=1
+        print("[MI]",mi)
     mi-=1
+    if(mi < 0 ): mi = 1
     print(mi,mo)
     caunt = 0
     for page in range(mi,mo+1):
