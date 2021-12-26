@@ -49,13 +49,18 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 soup = bs(resp, 'html.parser')
 
                 titul = soup.find("title").text
+                print(titul)
 
                 # -----------------------------------------------------------------------------------
                 # Достать статью в переменную txt
 
-
+                tttt = ""
+                tttt = soup.find(class_='wsw')
+                txxt = ""
+                txxt = bs(str(tttt),"html.parser").findAll("p")
                 txt = ""
-                txt = soup.find(class_='wsw').text
+                for i in txxt:
+                    txt+=i.text+"\n"
 
 
                 # ---------------------------------------Обработчик, можно не трогать----------------------------------------------
@@ -83,9 +88,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # ******************************************************************************************************************************************
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/'+"Azadliq") == []:
+                    if os.listdir('files/'+"Azadliq.org") == []:
                         try:
-                            with open(f'files/'+ "Azadliq" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Azadliq.org" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{titul}\n\n{url}\n\n{txt}')
 
                         except Exception as a:
@@ -109,7 +114,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         # ******************************************************************************************************************************************
 
                         try:
-                            with open(f'files/'+ "Azadliq" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Azadliq.org" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{url}\n\n{txt}')
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
@@ -200,27 +205,34 @@ def parsing(data_master_scan_in, data_time=(time.time())):
             src = req.text
             # print(src)
             soup = bs(src, 'html.parser')
-            for stat in soup.findAll(class_="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner"):
-                soap = bs(str(stat), 'html.parser')
-                asd = soap.find(class_="date date--mb date--size-3")
-                m = monthes.index(asd.text.split()[0])
-                d = asd.text.split()[1].replace(",","")
-                y = asd.text.split()[2]
-                if(int(d) == int(day)):
-                
-                    if str(stat).find('a') != None:
-                        print("[DEBUG] find <a>")
-                        for url_n in soap.findAll('a'):
-                            if urls_list.count(url_n.get('href')) == 0:
-                                urls_list.append(["https://www.azadliq.org"+url_n.get('href'), caunt, data_master_scan_in])
-                                caunt += 1  # Это нужно оставить, так как по нему создаются файлы txt
-                            # break
-                    else:
+            if len(soup.findAll(class_="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner")) > 0:
+                for stat in soup.findAll(class_="col-xs-12 col-sm-12 col-md-12 col-lg-12 fui-grid__inner"):
+                    soap = bs(str(stat), 'html.parser')
+                    asd = soap.find(class_="date date--mb date--size-3")
+                    m = monthes.index(asd.text.split()[0])
+                    d = asd.text.split()[1].replace(",","")
+                    y = asd.text.split()[2]
+                    if(int(d) == int(day)):
+                        print(str(stat).find('a'))
+                        if str(stat).find('a') != None:
+                            print("[DEBUG] find <a>")
+                            for url_n in soap.findAll('a'):
+                                if urls_list.count(url_n.get('href')) == 0:
+                                    urls_list.append(["https://www.azadliq.org"+url_n.get('href'), caunt, data_master_scan_in])
+                                    caunt += 1  # Это нужно оставить, так как по нему создаются файлы txt
+                                # break
+                        else:
+                            stop = 1
+                            break
+                    elif (int(d) < int(day)):
+                        stop = 1
+                        print("[DEBUG] ", page)
                         break
-                else:
-                    stop = 1
-                    print("[DEBUG] ", page)
-                    break
+            else:
+                stop = 1
+                print("[DEBUG] ", page)
+                break
+
             page+=1
         
         print(urls_list)
@@ -245,4 +257,3 @@ if __name__ == "__main__":
     parsing(data_master_scan_in = ojr, data_time=int(time.time()))
 
 # Ну потом можно принты почистить, просто не очень прикольно смотреть на пустую консоль
-
