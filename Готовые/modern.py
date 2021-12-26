@@ -35,7 +35,13 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
 
 
-                txt = soup.find(class_='nw_imtxt clearfix').text
+                tttt = ""
+                tttt = soup.find(class_='nw_imtxt clearfix')
+                txxt = ""
+                txxt = BeautifulSoup(str(tttt),"html.parser").findAll("p")
+                txt = ""
+                for i in txxt:
+                    txt+=i.text+"\n"
 
 
                 # ---------------------------------------Обработчик, можно не трогать----------------------------------------------
@@ -66,9 +72,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # moderator меняем на название сайта
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/modern') == []:
+                    if os.listdir('files/Modern.az') == []:
                         try:
-                            with open(f'files/modern/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/Modern.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{url}\n\n{txt}')
 
                         except Exception as a:
@@ -94,7 +100,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         # moderator меняем на название сайта
 
                         try:
-                            with open(f'files/modern/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/Modern.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{url}\n\n{txt}')
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
@@ -154,8 +160,6 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
         url_list_output = []
         output_data = []
-
-        f = open('files/modern/123.txt', 'w')
 
         data_time = time.localtime(data_time)
         print(data_time)
