@@ -201,8 +201,8 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     return url_list_output, output_data
 
 if __name__ == "__main__":
-    ojr = [['Kennedinin', 'əlaqədar'], ['bilməməsi'], ['k']]
-    parsing(data_master_scan_in = ojr, data_time=int(time.time() - 24*60*60*50))
+    ojr = [['adamlarınız', 'personalı'], ['pisləşməsi'], ['göstərir']]
+    print(parsing(data_master_scan_in = ojr, data_time=int(time.time() - 24*60*60*50)))
 
 
 
