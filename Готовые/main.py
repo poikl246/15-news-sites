@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt
 import design  # Это наш конвертированный файл дизайна
 import time
 import shutil
-import Qafqazinfo_az, Azadliq
+import Qafqazinfo_az, Azadliq, Apa_az, Azertag_az, Meydan_tv, Moderator, Modern, Musavat, Report_az, Aztrend, Turan_az, Yenisabah
 import datetime as DT
 
 class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
@@ -28,7 +28,7 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
             "Musavat.com",
             "Qafqazinfo.az",
             "Report.az",
-            "Trend.az",
+            "Aztrend.az",
             "Turan.az",
             "Yeniavaz.az",
             "Yenisabah.az"
@@ -69,8 +69,10 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
         self.turan.stateChanged.connect(self.Turan)
         self.yeniavaz.stateChanged.connect(self.Yeniavaz)
         self.yenisabah.stateChanged.connect(self.Yenisabah)
+        self.show()
 
     def btn(self):
+        self.hide()
         dt = DT.datetime.strptime(self.date.date().toString("dd MM yyyy"), '%d %m %Y')
         da = int(dt.timestamp())
         if not os.path.isdir("files"):
@@ -86,17 +88,43 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
             else:
                 print("Папка",name,"уже существует")
 
-        ojr = [['Kennedinin', 'əlaqədar'], ['Prezidenti'], ['k']]
-
+        ojr = [['Kennedinin', 'əlaqədar'], ['Prezidenti'], ['istinadən']]
+        ti = time.time()
         for key in self.dickt.keys():
             if(self.dickt[key] == 2):
                 print("[",key,"]",self.dickt[key])
+                self.hide()
                 if(key == 'qafqazinfo.az'):
                     Qafqazinfo_az.parsing(data_master_scan_in = ojr, data_time = da)
                 if(key == 'azadliq.org'):
                     Azadliq.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'apa.az'):
+                    Apa_az.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'azertag.az'):
+                    Azertag_az.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'meydan.tv'):
+                    Meydan_tv.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'moderator.az'):
+                    Moderator.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'modern.az'):
+                    Modern.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'report.az'):
+                    Report_az.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'trend.az'):
+                    Aztrend.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'turan.az'):
+                    Turan_az.parsing(data_master_scan_in = ojr, data_time = da)
+                if(key == 'yenisabah.az'):
+                    Yenisabah.parsing(data_master_scan_in = ojr, data_time = da)
+                
+                    ######################### МЕДЛЕННЫЕ #############################
+                if(key == 'musavat.com'):
+                    Musavat.parsing(data_master_scan_in = ojr, data_time = da, process_count = 6)
+                    #################################################################
+        print(time.time() - ti)
+        self.close()
         #shutil.rmtree("files")
-        #print("Папка files удалена")
+        #print("Папка files удалена") 
 
     def Abzaz(self, state):
         self.dickt["abzas.net"] = state
@@ -130,7 +158,7 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
     window = ExampleApp()  # Создаём объект класса ExampleApp
-    window.show()  # Показываем окно
+    #window.show()  # Показываем окно
     app.exec_()  # и запускаем приложение
 
 if __name__ == '__main__':  # Если мы запускаем файл напрямую, а не импортируем
