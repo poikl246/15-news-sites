@@ -74,9 +74,9 @@ def get_data(url_list):
             # moderator меняем на название сайта
 
             if exit_data.count(1) != 0:
-                if os.listdir('files/musavat') == []:
+                if os.listdir('files/Musavat.com') == []:
                     try:
-                        with open(f'files/musavat/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                        with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                             file.write(f'{url}\n\n{txt}')
                         # caunt += 1
                     except Exception as a:
@@ -102,7 +102,7 @@ def get_data(url_list):
                     # musavat меняем на название сайта
 
                     try:
-                        with open(f'files/musavat/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                        with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                             file.write(f'{url}\n\n{txt}')
                             output_data.append([exit_data, url])
                             # return [exit_data, url]
@@ -179,7 +179,7 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         driver.quit()
 
 
-def parsing(data_master_scan_in, data_time=(time.time())):
+def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
 
     url_list_output = []
 
@@ -189,7 +189,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     # exit()
 
     # process_count = int(input("Enter the number of processes: "))
-    process_count = 6
+    #process_count = 6
     urls_list = list(func_chunks_generators(pars_one(data_master_scan_in, data_time), process_count))
     print(urls_list)
     p = Pool(processes=process_count)
