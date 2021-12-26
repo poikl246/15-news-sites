@@ -5,17 +5,18 @@ from PyQt5.QtCore import Qt
 import design  # Это наш конвертированный файл дизайна
 import time
 import shutil
-import Qafqazinfo_az, Azadliq, Apa_az, Azertag_az, Meydan_tv, Moderator, Modern, Musavat, Report_az, Aztrend, Turan_az, Yenisabah
+import Qafqazinfo_az, Azadliq, Apa_az, Azertag_az, Meydan_tv, Moderator, Modern, Musavat, Report_az, Aztrend, Turan_az, Yenisabah, Abzas
 import datetime as DT
 
 class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
+
 
     def __init__(self):
         # Это здесь нужно для доступа к переменным, методам
         # и т.д. в файле design.py
         super().__init__()
         self.setupUi(self)  # Это нужно для инициализации нашего дизайна
-        self.potoki = 0
+        self.potoki = int(self.spinBox.value())
         self.names = [
 
             "Abzas.net",
@@ -37,20 +38,20 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
 
         self.dickt = {
 
-            "abzas.net":0,
             "apa.az":0,
             "azadliq.org":0,
             "azertag.az":0,
             "meydan.tv":0,
             "moderator.az":0,
             "modern.az":0,
-            "musavat.com":0,
             "qafqazinfo.az":0,
             "report.az":0,
             "trend.az":0,
             "turan.az":0,
-            "yeniavaz.az":0,
-            "yenisabah.az":0
+            "yenisabah.az":0,
+            "abzas.net":0,
+            "musavat.com":0,
+            "yeniavaz.az":0
 
         }
 
@@ -118,11 +119,14 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindows):
                     Yenisabah.parsing(data_master_scan_in = ojr, data_time = da)
                 
                     ######################### МЕДЛЕННЫЕ #############################
+                if(key == 'abzas.net'):
+                    Abzas.parsing(data_master_scan_in = ojr, data_time = da)
                 if(key == 'musavat.com'):
-                    Musavat.parsing(data_master_scan_in = ojr, data_time = da, process_count = 6)
+                    Musavat.parsing(data_master_scan_in = ojr, data_time = da, process_count = self.potoki)
                     #################################################################
         print(time.time() - ti)
         self.close()
+        os.remove("icon.png")
         #shutil.rmtree("files")
         #print("Папка files удалена") 
 
