@@ -68,9 +68,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # moderator меняем на название сайта
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/yenisabah') == []:
+                    if os.listdir('files/Yenisabah.az') == []:
                         try:
-                            with open(f'files/yenisabah/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/Yenisabah.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{url}\n\n{txt}')
 
                         except Exception as a:
@@ -96,7 +96,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         # moderator меняем на название сайта
 
                         try:
-                            with open(f'files/yenisabah/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/Yenisabah.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{url}\n\n{txt}')
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
@@ -156,13 +156,13 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         url_list_output = []
         output_data = []
 
-        f = open('files/yenisabah/123.txt', 'w')
-
         data_time = time.localtime(data_time)
         print(data_time)
         print(data_time[0])
         print(data_time)
-
+        year, month, day = str(data_time[0]),str(data_time[1]),str(data_time[2])
+        if int(day) // 10 == 0: day = "0"+day 
+        if int(month) // 10 == 0: month = "0"+month 
         timer = time.time()
         urls_list = []
         caunt = 0
@@ -174,10 +174,11 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         # УСЛОВНО РАЗВЕКАТЬСЯ МОЖНО ВОТ ТУТ ↓
 
         for i in range(0, 3000):
+            time.sleep(1)
             headers = {'Accept': '*/*', 'Connection': 'keep-alive',
                        'User-Agent': f'{us.random}',
                        'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
-            url = f'https://yenisabah.az/calendar/{data_time[0]}-{data_time[1]}-{data_time[2]}?page={i}'
+            url = f'https://yenisabah.az/calendar/{year}-{month}-{day}?page={i}'
             print(url)
 
             req = requests.get(url, headers=headers)
