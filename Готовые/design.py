@@ -124,6 +124,7 @@ class Ui_MainWindows(object):
         font.setPointSize(15)
         self.spinBox.setFont(font)
         self.spinBox.setMinimum(1)
+        self.spinBox.setMaximum(10)
         self.spinBox.setObjectName("spinBox")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(60, 550, 101, 61))

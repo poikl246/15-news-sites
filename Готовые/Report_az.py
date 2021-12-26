@@ -41,12 +41,13 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
 
                 tttt = ""
-                tttt = soup.find(class_='entry-content')
+                tttt = soup.find(class_='editor-body')
                 txxt = ""
                 txxt = bs(str(tttt),"html.parser").findAll("p")
                 txt = ""
                 for i in txxt:
                     txt+=i.text+"\n"
+                print(txt)
 
 
                 # ---------------------------------------Обработчик, можно не трогать----------------------------------------------
@@ -75,9 +76,9 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # ******************************************************************************************************************************************
 
                 if exit_data.count(1) != 0:
-                    if os.listdir('files/'+"report.az") == []:
+                    if os.listdir('files/'+"Report.az") == []:
                         try:
-                            with open(f'files/'+ "report.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Report.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{titul}\n\n{url}\n\n{txt}')
 
                         except Exception as a:
@@ -101,7 +102,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         # ******************************************************************************************************************************************
 
                         try:
-                            with open(f'files/'+ "report.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
+                            with open(f'files/'+ "Report.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{titul}\n\n{url}\n\n{txt}')
                                 output_data.append(exit_data)
                                 url_list_output.append(url)
@@ -190,6 +191,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
             if soup.findAll(class_="col-lg-3 col-md-4 col-sm-6 infinity-item") != 0:
                 for stat in soup.findAll(class_="col-lg-3 col-md-4 col-sm-6 infinity-item"):
                     urls_list.append(["https://report.az"+bs(str(stat),"html.parser").find("a")["href"],caunt, data_master_scan_in])
+                    caunt+=1
                 hour, minute = bs(str(soup.findAll(class_="col-lg-3 col-md-4 col-sm-6 infinity-item")[-1]),"html.parser").findAll("span")[-1].text.split(":")
                 if int(minute)-1 < 0:
                     minute = "59"
@@ -235,7 +237,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     return url_list_output, output_data
 
 if __name__ == "__main__":
-    ojr = [['Kennedinin', 'əlaqədar'], ['Prezidenti'], ['k']]
+    ojr = [['Kennedinin', 'əlaqədar'], ['Prezidenti'], ['futbol']]
     parsing(data_master_scan_in = ojr, data_time=int(time.time() - 24*60*60*50))
 
 # Ну потом можно принты почистить, просто не очень прикольно смотреть на пустую консоль
