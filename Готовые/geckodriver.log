@@ -10,12 +10,13 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1640509750056	Marionette	INFO	Listening on port 57711
 1640509750450	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1640509762885	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-1640509779621	geckodriver	INFO	Listening on 127.0.0.1:57813
-1640509782687	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileIQOAvu"
-*** You are running in headless mode.
-1640509782943	Marionette	INFO	Marionette enabled
-[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileIQOAvu\\search.json.mozlz4", (void 0)))
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 47: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+
 1640509783829	Marionette	INFO	Listening on port 57821
 1640509784224	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1640509787937	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
@@ -732,3 +733,38 @@ nMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1640551993231	geckodriver	INFO	Listening on 127.0.0.1:52077
+1640551996285	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile8HlBKx"
+*** You are running in headless mode.
+1640551996691	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile8HlBKx\\search.json.mozlz4", (void 0)))
+1640551997602	Marionette	INFO	Listening on port 52093
+1640551997849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640552017169	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1640552318550	geckodriver	INFO	Listening on 127.0.0.1:52283
+1640552321633	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileFugsOp"
+*** You are running in headless mode.
+1640552321877	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileFugsOp\\search.json.mozlz4", (void 0)))
+1640552322787	Marionette	INFO	Listening on port 52291
+1640552323174	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640552324178	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1640552343917	Marionette	INFO	Stopped listening on port 52291
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError: Network request failed
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1640552344956	geckodriver	INFO	Listening on 127.0.0.1:52395
+1640552348021	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile0HWAPi"
+*** You are running in headless mode.
+1640552348266	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofile0HWAPi\\search.json.mozlz4", (void 0)))
+1640552349215	Marionette	INFO	Listening on port 52403
+1640552349562	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1640552354580	Marionette	INFO	Stopped listening on port 52403

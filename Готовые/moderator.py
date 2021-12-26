@@ -75,8 +75,8 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
                         except Exception as a:
                             print(a)
-                        output_data.append(exit_data)
-                        url_list_output.append(url)
+                        output_data.append([exit_data, url])
+
 
 
                     else:
@@ -98,8 +98,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                                         file.write(f'{i}')
                                     except:
                                         pass
-                                output_data.append(exit_data)
-                                url_list_output.append(url)
+                                output_data.append([exit_data, url])
 
 
                         except Exception as a:
