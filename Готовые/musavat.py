@@ -190,12 +190,46 @@ def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
 
     # process_count = int(input("Enter the number of processes: "))
     #process_count = 6
+
+    
     urls_list = list(func_chunks_generators(pars_one(data_master_scan_in, data_time), process_count))
     print(urls_list)
     p = Pool(processes=process_count)
     p.map(get_data, urls_list)
 
 
+    out_data_list = []
+    for file_l in os.listdir('files/Musavat.com'):
+        print(file_l)
+
+        if file_l != '123.txt':
+            with open(f'files/Musavat.com/{file_l}', 'r', encoding='utf-8') as file:
+                url = file.readline()
+                file.readline()
+
+                txt = file.read()
+            # print(url, txt)
+
+            text_list = txt.lower().split(' ')
+            # print(text_list)
+            # caunt_local = 0
+            exit_data = []
+            for one_line in data_master_scan_in:
+                caunt_local = 0
+                for twe in one_line:
+                    for master_text in text_list:
+                        if fuzz.ratio(master_text, twe) >= 80:
+                            caunt_local += 1
+                            break
+
+                if caunt_local == len(one_line):
+                    exit_data.append(1)
+                else:
+                    exit_data.append(0)
+
+            out_data_list.append(exit_data)
+
+    return out_data_list
 
 
 
