@@ -2,6 +2,7 @@ import os
 from bs4 import BeautifulSoup
 import requests
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 import time
 from multiprocessing import Pool
 import random
@@ -43,12 +44,16 @@ def get_data(url_list):
 
         # "C:\\users\\selenium_python\\chromedriver\\chromedriver.exe"
         # r"C:\users\selenium_python\chromedriver\chromedriver.exe"
+        driver.get(url='https://2ip.ru')
+        time.sleep(10)
         for url, caunt, data_master_scan in url_list:
             driver.get(url=url)
-            time.sleep(2)
+            time.sleep(10)
             src = driver.page_source
             soup = BeautifulSoup(src, 'html.parser')
-            txt = soup.find(class_="news-content").text.replace('\n', ' ')
+
+            txt = soup.find(class_="ts-grid-box content-wrapper").text.replace('\n', ' ')
+
             print(txt)
             text_list = txt.lower().split(' ')
             # print(text_list)
@@ -74,9 +79,9 @@ def get_data(url_list):
             # moderator меняем на название сайта
 
             if exit_data.count(1) != 0:
-                if os.listdir('files/Musavat.com') == []:
+                if os.listdir('files/yeniavaz.com') == []:
                     try:
-                        with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                        with open(f'files/yeniavaz.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                             file.write(f'{url}\n\n{txt}')
                         # caunt += 1
                     except Exception as a:
@@ -102,7 +107,7 @@ def get_data(url_list):
                     # musavat меняем на название сайта
 
                     try:
-                        with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                        with open(f'files/yeniavaz.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
                             file.write(f'{url}\n\n{txt}')
                             output_data.append([exit_data, url])
                             # return [exit_data, url]
@@ -144,34 +149,39 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         # "C:\\users\\selenium_python\\chromedriver\\chromedriver.exe"
         # r"C:\users\selenium_python\chromedriver\chromedriver.exe"
 
-        driver.get(url='https://musavat.com/archive')
+        driver.get(url=f'https://www.yeniavaz.com/az/search?showDate={data_time[2]}.{data_time[1]}.{data_time[0]}')
         time.sleep(4)
-        caunt_l = 0
-        for i in range(1, 3):
-            url = f'https://musavat.com/search?text=&type=news&date_begin={data_time[2]}.{data_time[1]}.{data_time[0]}&date_end={data_time2[2]}.{data_time2[1]}.{data_time2[0]}&id_news_category=&id_author=&page={i}'
-            driver.get(url=url)
-            time.sleep(4)
-            src = driver.page_source
-            # print(data_master_scan_in)
-            try:
-                soup = BeautifulSoup(src, 'html.parser')
 
-                if int(soup.find(class_='pagination').find_all('li')[-2].text) == i:
-                    return url_list_out
+        len_page = 0
 
-                for data in soup.find_all(class_='row block-news'):
-                    if data.find('a') != None:
-                        ur = 'https://musavat.com' + data.find(class_='form-group col-sm-3 col-md-3').get('href')
-                        print(ur)
-                        url_list_out.append([ur, caunt_l, data_master_scan_in])
-                        caunt_l += 1
+        for i in range(1, 1000):
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(0.8)
+            print(len(driver.page_source), len(driver.page_source) - len_page)
+            if len(driver.page_source) - len_page < 100:
+                break
+            len_page = len(driver.page_source)
 
-                print(url_list_out)
+        page = driver.page_source
+        print(page)
+        driver.close()
+        driver.quit()
+
+        soup = BeautifulSoup(page, 'html.parser')
+
+        list_url_data = soup.find(id='divLoadMore').find_all('div')
+        # print(list_url_data[0])
+
+        url_one_pars = []
+        caunt = 0
+        for div in list_url_data:
+            if div.find('a') != None:
+                url_one_pars.append(['https://www.yeniavaz.com' + div.find('a').get('href'), caunt, data_master_scan_in])
+                caunt += 1
 
 
-            except:
-                print('NO')
-        return url_list_out
+        print(url_one_pars)
+        return url_one_pars
 
     except Exception as ex:
         print(ex)
@@ -180,7 +190,7 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         driver.quit()
 
 
-def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
+def parsing(data_master_scan_in, data_time=(time.time()),process_count=2):
 
     url_list_output = []
 
@@ -200,11 +210,11 @@ def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
 
 
     out_data_list = []
-    for file_l in os.listdir('files/Musavat.com'):
+    for file_l in os.listdir('files/yeniavaz.com'):
         print(file_l)
 
         if file_l != '123.txt':
-            with open(f'files/Musavat.com/{file_l}', 'r', encoding='utf-8') as file:
+            with open(f'files/yeniavaz.com/{file_l}', 'r', encoding='utf-8') as file:
                 url = file.readline()
                 file.readline()
 
@@ -236,4 +246,4 @@ def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
 
 if __name__ == "__main__":
     ojr = [['əlaqəsini', 'həyata'], ['edən'], ['k']]
-    print(parsing(data_master_scan_in = ojr, data_time=int(time.time())))
+    print(parsing(data_master_scan_in = ojr, data_time=int(time.time() - 20*24*60*60), process_count=2))
