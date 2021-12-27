@@ -742,8 +742,10 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1640551997602	Marionette	INFO	Listening on port 52093
 1640551997849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1640552017169	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-1640552318550	geckodriver	INFO	Listening on 127.0.0.1:52283
-1640552321633	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileFugsOp"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+Exiting due to channel error.
+-headless" "-no-remote" "-profile" "C:\\Users\\hp\\AppData\\Local\\Temp\\rust_mozprofileFugsOp"
 *** You are running in headless mode.
 1640552321877	Marionette	INFO	Marionette enabled
 [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
