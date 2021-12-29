@@ -2,7 +2,6 @@ import os
 from bs4 import BeautifulSoup
 import requests
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
 from multiprocessing import Pool
 import random
@@ -25,7 +24,7 @@ options.set_preference("dom.webdriver.enabled", True)
 
 
 # headless mode
-options.headless = False
+options.headless = True
 
 
 
@@ -44,16 +43,13 @@ def get_data(url_list):
 
         # "C:\\users\\selenium_python\\chromedriver\\chromedriver.exe"
         # r"C:\users\selenium_python\chromedriver\chromedriver.exe"
-        driver.get(url='https://2ip.ru')
-        time.sleep(10)
         for url, caunt, data_master_scan in url_list:
             driver.get(url=url)
-            time.sleep(10)
+            print(url)
+            time.sleep(2)
             src = driver.page_source
             soup = BeautifulSoup(src, 'html.parser')
-
-            txt = soup.find(class_="ts-grid-box content-wrapper").text.replace('\n', ' ')
-
+            txt = soup.find(class_="post-title lg").text.replace('\n', '') + '\n\n' + soup.find(class_="post-content-area").text.replace('\n', '')
             print(txt)
             text_list = txt.lower().split(' ')
             # print(text_list)
@@ -93,36 +89,38 @@ def get_data(url_list):
                 # ----------------------------------------------не трогать-------------------------------------------------------------
 
                 else:
-                    for dir_site in os.listdir('files'):
-                        for dir_page in os.listdir(f'files/{dir_site}'):
-                            with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
-                                file.readline()
-                                file.readline()
-                                file.readline()
-                                if fuzz.ratio(txt, file.read()) >= 50:
-                                    return 0
-
-                    # ******************************************************************************************************************************************
-
-                    # musavat меняем на название сайта
-
                     try:
-                        with open(f'files/yeniavaz.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                            file.write(f'{url}\n\n{txt}')
-                            output_data.append([exit_data, url])
-                            # return [exit_data, url]
-                            # url_list_output.append(url)
-                        # caunt += 1
+                        for dir_site in os.listdir('files'):
+                            for dir_page in os.listdir(f'files/{dir_site}'):
+                                with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
+                                    file.readline()
+                                    file.readline()
+                                    file.readline()
+                                    if fuzz.ratio(txt, file.read()) >= 50:
+                                        nsjrjrn=100/0
+
+                        # ******************************************************************************************************************************************
+
+                        # musavat меняем на название сайта
+
+                        try:
+                            with open(f'files/yeniavaz.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                                file.write(f'{url}\n\n{txt}')
+                                output_data.append([exit_data, url])
+                                # return [exit_data, url]
+                                # url_list_output.append(url)
+                            # caunt += 1
 
 
-                    except Exception as a:
-                        print(a)
-
+                        except Exception as a:
+                            print(a)
+                    except:
+                        print('статья уже есть')
                 # ******************************************************************************************************************************************
 
                 print(output_data)
 
-        time.sleep(random.randrange(3, 10))
+        time.sleep(random.randrange(3, 5))
 
 
     except Exception as ex:
@@ -149,39 +147,48 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         # "C:\\users\\selenium_python\\chromedriver\\chromedriver.exe"
         # r"C:\users\selenium_python\chromedriver\chromedriver.exe"
 
-        driver.get(url=f'https://www.yeniavaz.com/az/search?showDate={data_time[2]}.{data_time[1]}.{data_time[0]}')
-        time.sleep(4)
+        driver.get(url='https://www.yeniavaz.com/az')
+        time.sleep(1)
+        caunt_l = 0
+        url = f'https://www.yeniavaz.com/az/search?showDate={data_time[2]}.{data_time[1]}.{data_time[0]}'
+        driver.get(url=url)
 
-        len_page = 0
-
+        # src = driver.page_source
+        len_list = 0
+        time.sleep(2)
         for i in range(1, 1000):
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(0.8)
-            print(len(driver.page_source), len(driver.page_source) - len_page)
-            if len(driver.page_source) - len_page < 100:
+            src = driver.page_source
+            print(len(src), len_list)
+            # print(data_master_scan_in)
+            if len(src) - len_list < 30:
                 break
-            len_page = len(driver.page_source)
+            #
+            len_list = len(src)
 
-        page = driver.page_source
-        print(page)
-        driver.close()
-        driver.quit()
-
-        soup = BeautifulSoup(page, 'html.parser')
-
-        list_url_data = soup.find(id='divLoadMore').find_all('div')
-        # print(list_url_data[0])
-
-        url_one_pars = []
-        caunt = 0
-        for div in list_url_data:
-            if div.find('a') != None:
-                url_one_pars.append(['https://www.yeniavaz.com' + div.find('a').get('href'), caunt, data_master_scan_in])
-                caunt += 1
+        try:
+            src = driver.page_source
+            soup = BeautifulSoup(src, 'html.parser')
 
 
-        print(url_one_pars)
-        return url_one_pars
+            print(soup.find(id = 'divLoadMore'))
+            for data in soup.find(id='divLoadMore').find_all('a'):
+                print(data.find('link'))
+
+                ur = 'https://www.yeniavaz.com' + data.get('href')
+                print(ur)
+                url_list_out.append([ur, caunt_l, data_master_scan_in])
+                caunt_l += 1
+
+            print(url_list_out)
+
+
+        except:
+            print('NO')
+
+
+        return url_list_out
 
     except Exception as ex:
         print(ex)
@@ -190,11 +197,12 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         driver.quit()
 
 
-def parsing(data_master_scan_in, data_time=(time.time()),process_count=2):
+def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
 
     url_list_output = []
 
-
+    with open(f'files/yeniavaz.com/123.txt', 'w', encoding='utf-8') as file:
+        file.write('')
 
 
     # exit()
@@ -205,11 +213,14 @@ def parsing(data_master_scan_in, data_time=(time.time()),process_count=2):
 
     urls_list = list(func_chunks_generators(pars_one(data_master_scan_in, data_time), process_count))
     print(urls_list)
+
     p = Pool(processes=process_count)
     p.map(get_data, urls_list)
 
 
+
     out_data_list = []
+
     for file_l in os.listdir('files/yeniavaz.com'):
         print(file_l)
 
@@ -246,4 +257,4 @@ def parsing(data_master_scan_in, data_time=(time.time()),process_count=2):
 
 if __name__ == "__main__":
     ojr = [['əlaqəsini', 'həyata'], ['edən'], ['k']]
-    print(parsing(data_master_scan_in = ojr, data_time=int(time.time() - 20*24*60*60), process_count=2))
+    print(parsing(data_master_scan_in = ojr, data_time=int(time.time() - 20*24*60*60), process_count=4))

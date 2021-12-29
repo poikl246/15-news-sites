@@ -24,7 +24,7 @@ options.set_preference("dom.webdriver.enabled", True)
 
 
 # headless mode
-options.headless = False
+options.headless = True
 
 
 
@@ -88,31 +88,33 @@ def get_data(url_list):
                 # ----------------------------------------------не трогать-------------------------------------------------------------
 
                 else:
-                    for dir_site in os.listdir('files'):
-                        for dir_page in os.listdir(f'files/{dir_site}'):
-                            with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
-                                file.readline()
-                                file.readline()
-                                file.readline()
-                                if fuzz.ratio(txt, file.read()) >= 50:
-                                    return 0
-
-                    # ******************************************************************************************************************************************
-
-                    # musavat меняем на название сайта
-
                     try:
-                        with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                            file.write(f'{url}\n\n{txt}')
-                            output_data.append([exit_data, url])
-                            # return [exit_data, url]
-                            # url_list_output.append(url)
-                        # caunt += 1
+                        for dir_site in os.listdir('files'):
+                            for dir_page in os.listdir(f'files/{dir_site}'):
+                                with open(f'files/{dir_site}/{dir_page}', 'r',encoding="utf-8") as file:
+                                    file.readline()
+                                    file.readline()
+                                    file.readline()
+                                    if fuzz.ratio(txt, file.read()) >= 50:
+                                        nsjrjrn=100/0
+
+                        # ******************************************************************************************************************************************
+
+                        # musavat меняем на название сайта
+
+                        try:
+                            with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                                file.write(f'{url}\n\n{txt}')
+                                output_data.append([exit_data, url])
+                                # return [exit_data, url]
+                                # url_list_output.append(url)
+                            # caunt += 1
 
 
-                    except Exception as a:
-                        print(a)
-
+                        except Exception as a:
+                            print(a)
+                    except:
+                        print('статья уже есть')
                 # ******************************************************************************************************************************************
 
                 print(output_data)
@@ -147,7 +149,7 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         driver.get(url='https://musavat.com/archive')
         time.sleep(4)
         caunt_l = 0
-        for i in range(1, 3):
+        for i in range(1, 1000):
             url = f'https://musavat.com/search?text=&type=news&date_begin={data_time[2]}.{data_time[1]}.{data_time[0]}&date_end={data_time2[2]}.{data_time2[1]}.{data_time2[0]}&id_news_category=&id_author=&page={i}'
             driver.get(url=url)
             time.sleep(4)
@@ -157,11 +159,14 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
                 soup = BeautifulSoup(src, 'html.parser')
 
                 if int(soup.find(class_='pagination').find_all('li')[-2].text) == i:
+
                     return url_list_out
 
-                for data in soup.find_all(class_='row block-news'):
+
+
+                for data in soup.find_all(class_='form-group col-sm-3 col-md-3'):
                     if data.find('a') != None:
-                        ur = 'https://musavat.com' + data.find(class_='form-group col-sm-3 col-md-3').get('href')
+                        ur = 'https://musavat.com' + data.find('a').get('href')
                         print(ur)
                         url_list_out.append([ur, caunt_l, data_master_scan_in])
                         caunt_l += 1
@@ -171,6 +176,8 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
 
             except:
                 print('NO')
+
+
         return url_list_out
 
     except Exception as ex:
@@ -180,11 +187,12 @@ def pars_one(data_master_scan_in, data_time=(time.time())):
         driver.quit()
 
 
-def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
+def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
 
     url_list_output = []
 
-
+    with open(f'files/Musavat.com/123.txt', 'w', encoding='utf-8') as file:
+        file.write('')
 
 
     # exit()
@@ -199,7 +207,9 @@ def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
     p.map(get_data, urls_list)
 
 
+
     out_data_list = []
+
     for file_l in os.listdir('files/Musavat.com'):
         print(file_l)
 
@@ -236,4 +246,4 @@ def parsing(data_master_scan_in, data_time=(time.time()),process_count = 1):
 
 if __name__ == "__main__":
     ojr = [['əlaqəsini', 'həyata'], ['edən'], ['k']]
-    print(parsing(data_master_scan_in = ojr, data_time=int(time.time())))
+    print(parsing(data_master_scan_in = ojr, data_time=int(time.time() - 20*24*60*60), process_count = 10))
