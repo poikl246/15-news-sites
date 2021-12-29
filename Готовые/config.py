@@ -45,7 +45,7 @@ def output_csv(parsing_data, input_data, name):
     return caunt_list
 
 
-output_csv(srkjb, ojr, 'jrgnl')
+# output_csv(srkjb, ojr, 'jrgnl')
 
 def exit_code(caunt_list):
     out_list = [" ", " "]
