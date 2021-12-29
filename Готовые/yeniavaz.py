@@ -49,6 +49,7 @@ def get_data(url_list):
             time.sleep(2)
             src = driver.page_source
             soup = BeautifulSoup(src, 'html.parser')
+            titul = soup.find("title").text
             txt = soup.find(class_="post-title lg").text.replace('\n', '') + '\n\n' + soup.find(class_="post-content-area").text.replace('\n', '')
             print(txt)
             text_list = txt.lower().split(' ')
@@ -75,10 +76,10 @@ def get_data(url_list):
             # moderator меняем на название сайта
 
             if exit_data.count(1) != 0:
-                if os.listdir('files/yeniavaz.com') == []:
+                if os.listdir('files/Yeniavaz.az') == []:
                     try:
-                        with open(f'files/yeniavaz.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                            file.write(f'{url}\n\n{txt}')
+                        with open(f'files/Yeniavaz.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                            file.write(f'{url}\n\n{titul}\n\n{txt}')
                         # caunt += 1
                     except Exception as a:
                         print(a)
@@ -104,8 +105,8 @@ def get_data(url_list):
                         # musavat меняем на название сайта
 
                         try:
-                            with open(f'files/yeniavaz.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                            with open(f'files/Yeniavaz.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
+                                file.write(f'{url}\n\n{titul}\n\n{txt}')
                                 output_data.append([exit_data, url])
                                 # return [exit_data, url]
                                 # url_list_output.append(url)
@@ -201,7 +202,7 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
 
     url_list_output = []
 
-    with open(f'files/yeniavaz.com/123.txt', 'w', encoding='utf-8') as file:
+    with open(f'files/Yeniavaz.az/123.txt', 'w', encoding='utf-8') as file:
         file.write('')
 
 
@@ -217,15 +218,16 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
     p = Pool(processes=process_count)
     p.map(get_data, urls_list)
 
-    kjbkbklnfb = [[]]
+
+
     out_data_list = []
 
-    for file_l in os.listdir('files/yeniavaz.com'):
+    for file_l in os.listdir('files/Yeniavaz.az'):
         print(file_l)
 
         if file_l != '123.txt':
-            with open(f'files/yeniavaz.com/{file_l}', 'r', encoding='utf-8') as file:
-                url = file.readline().replace('\n', '')
+            with open(f'files/Yeniavaz.az/{file_l}', 'r', encoding='utf-8') as file:
+                url = file.readline()
                 file.readline()
 
                 txt = file.read()
@@ -248,10 +250,9 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
                 else:
                     exit_data.append(0)
 
-            out_data_list.append([exit_data, url])
-    # print(out_data_list)
-    kjbkbklnfb.append(out_data_list)
-    return kjbkbklnfb
+            out_data_list.append([exit_data,url])
+
+    return [],out_data_list
 
 
 

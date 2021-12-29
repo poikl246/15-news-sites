@@ -48,6 +48,7 @@ def get_data(url_list):
             time.sleep(2)
             src = driver.page_source
             soup = BeautifulSoup(src, 'html.parser')
+            titul = soup.find("title").text
             txt = soup.find(class_="news-content").text.replace('\n', ' ')
             print(txt)
             text_list = txt.lower().split(' ')
@@ -77,7 +78,7 @@ def get_data(url_list):
                 if os.listdir('files/Musavat.com') == []:
                     try:
                         with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                            file.write(f'{url}\n\n{txt}')
+                            file.write(f'{url}\n\n{titul}\n\n{txt}')
                         # caunt += 1
                     except Exception as a:
                         print(a)
@@ -104,7 +105,7 @@ def get_data(url_list):
 
                         try:
                             with open(f'files/Musavat.com/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                                file.write(f'{url}\n\n{titul}\n\n{txt}')
                                 output_data.append([exit_data, url])
                                 # return [exit_data, url]
                                 # url_list_output.append(url)
@@ -207,7 +208,7 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
     p.map(get_data, urls_list)
 
 
-    kjbkbklnfb = [[]]
+
     out_data_list = []
 
     for file_l in os.listdir('files/Musavat.com'):
@@ -215,7 +216,7 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
 
         if file_l != '123.txt':
             with open(f'files/Musavat.com/{file_l}', 'r', encoding='utf-8') as file:
-                url = file.readline().replace('\n', '')
+                url = file.readline()
                 file.readline()
 
                 txt = file.read()
@@ -238,9 +239,9 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
                 else:
                     exit_data.append(0)
 
-            out_data_list.append([exit_data, url])
-    kjbkbklnfb.append(out_data_list)
-    return kjbkbklnfb
+            out_data_list.append([exit_data,url])
+
+    return [],out_data_list
 
 
 

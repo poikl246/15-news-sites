@@ -95,8 +95,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
                         except Exception as a:
                             print(a)
-                        output_data.append(exit_data)
-                        url_list_output.append(url)
+                        output_data.append([exit_data, url])
 
                     # ----------------------------------------------не трогать-------------------------------------------------------------
 
@@ -116,8 +115,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                         try:
                             with open(f'files/'+ "Azadliq.org" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
                                 file.write(f'{url}\n\n{txt}')
-                                output_data.append(exit_data)
-                                url_list_output.append(url)
+                                output_data.append([exit_data, url])
 
 
                         except Exception as a:

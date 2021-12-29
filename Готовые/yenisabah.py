@@ -30,6 +30,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # print(resp)
                 soup = BeautifulSoup(resp, 'html.parser')
 
+                titul = soup.find("title").text
                 # -----------------------------------------------------------------------------------
                 # Достать статью в переменную txt
 
@@ -71,7 +72,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     if os.listdir('files/Yenisabah.az') == []:
                         try:
                             with open(f'files/Yenisabah.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                                file.write(f'{url}\n\n{titul}\n\n{txt}')
 
                         except Exception as a:
                             print(a)
@@ -96,7 +97,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
                         try:
                             with open(f'files/Yenisabah.az/text_{caunt}.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{url}\n\n{txt}')
+                                file.write(f'{url}\n\n{titul}\n\n{txt}')
                                 output_data.append([exit_data, url])
 
 

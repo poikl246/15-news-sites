@@ -30,6 +30,8 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                 # print(resp)
                 soup = BeautifulSoup(resp, 'html.parser')
 
+                titul = soup.find("title").text
+
                 tri = soup.find(class_='newsin-text')
                 txt = ""
                 for i in tri:
@@ -201,7 +203,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     return url_list_output, output_data
 
 if __name__ == "__main__":
-    ojr = [['adamlarınız', 'personalı'], ['pisləşməsi'], ['göstərir']]
+    ojr = [['adamlarınız', 'personalı'], ['yazıb'], ['göstərir']]
     print(parsing(data_master_scan_in = ojr, data_time=int(time.time() - 24*60*60*50)))
 
 

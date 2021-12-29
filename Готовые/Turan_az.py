@@ -78,7 +78,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     if os.listdir('files/'+"Turan.az") == []:
                         try:
                             with open(f'files/'+ "Turan.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{titul}\n\n{url}\n\n{txt}')
+                                file.write(f'{url}\n\n{titul}\n\n{txt}')
 
                         except Exception as a:
                             print(a)
@@ -101,7 +101,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
 
                         try:
                             with open(f'files/'+ "Turan.az" +'/text_'+ str(caunt) +'.txt', 'w', encoding='utf-8') as file:
-                                file.write(f'{titul}\n\n{url}\n\n{txt}')
+                                file.write(f'{url}\n\n{titul}\n\n{txt}')
                                 output_data.append([exit_data, url])
 
 
