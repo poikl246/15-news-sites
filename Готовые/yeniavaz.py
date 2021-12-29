@@ -217,8 +217,7 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
     p = Pool(processes=process_count)
     p.map(get_data, urls_list)
 
-
-
+    kjbkbklnfb = [[]]
     out_data_list = []
 
     for file_l in os.listdir('files/yeniavaz.com'):
@@ -226,7 +225,7 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
 
         if file_l != '123.txt':
             with open(f'files/yeniavaz.com/{file_l}', 'r', encoding='utf-8') as file:
-                url = file.readline()
+                url = file.readline().replace('\n', '')
                 file.readline()
 
                 txt = file.read()
@@ -249,9 +248,10 @@ def parsing(data_master_scan_in, data_time=(time.time()), process_count = 1):
                 else:
                     exit_data.append(0)
 
-            out_data_list.append(exit_data)
-
-    return out_data_list
+            out_data_list.append([exit_data, url])
+    # print(out_data_list)
+    kjbkbklnfb.append(out_data_list)
+    return kjbkbklnfb
 
 
 
