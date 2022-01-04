@@ -156,7 +156,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
         timer = time.time()
         urls_list = []
         caunt = 0
-        for i in range(1, 3000):
+        for i in range(1, 1000):
             headers = {'Accept': '*/*', 'Connection': 'keep-alive',
                        'User-Agent': f'{us.random}',
                        'Cache-Control': 'max-age=0', 'DNT': '1', 'Upgrade-Insecure-Requests': '1'}
