@@ -240,7 +240,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     return url_list_output, output_data
 
 if __name__ == "__main__":
-    ojr = [['Kennedinin', 'əlaqədar'], ['Mehmet'], ['k']]
+    ojr = [['məclis', 'milli'], ['Mehmet'], ['k']]
     parsing(data_master_scan_in = ojr, data_time=int(time.time() - 24*60*60*50))
 
 # Ну потом можно принты почистить, просто не очень прикольно смотреть на пустую консоль

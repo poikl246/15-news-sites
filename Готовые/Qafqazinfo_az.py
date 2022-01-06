@@ -61,7 +61,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
                     caunt_local = 0
                     for twe in one_line:
                         for master_text in text_list:
-                            if fuzz.ratio(master_text, twe) >= 80:
+                            if fuzz.ratio(master_text, twe) >= 65:
                                 caunt_local += 1
                                 break
 
@@ -225,7 +225,7 @@ def parsing(data_master_scan_in, data_time=(time.time())):
     return url_list_output, output_data
 
 if __name__ == "__main__":
-    ojr = [['Kennedinin', 'əlaqədar'], ['Prezidenti'], ['k']]
+    ojr = [['milli'], ['məclis'], ['k']]
     parsing(data_master_scan_in = ojr, data_time=int(time.time()))
 
 # Ну потом можно принты почистить, просто не очень прикольно смотреть на пустую консоль
